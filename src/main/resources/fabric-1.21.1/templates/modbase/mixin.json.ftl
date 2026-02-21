@@ -12,7 +12,6 @@
 </#if>
 <#if w.hasElementsOfType('armor')>
 	<#assign mixins = mixins + ['PiglinAiMixin']>
-	<#assign client_mixins = client_mixins + ['EquipmentLayerRendererMixin']>
 </#if>
 <#assign mixins = mixins + ['LivingEntityMixin']>
 <#assign mixins = mixins + ['PlayerMixin']>

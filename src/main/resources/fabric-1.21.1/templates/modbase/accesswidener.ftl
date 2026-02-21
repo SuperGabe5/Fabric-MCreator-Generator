@@ -27,10 +27,8 @@ extendable method net/minecraft/world/entity/projectile/FishingHook shouldStopFi
 </#if>
 
 <#if w.hasElementsOfType("armor")>
-accessible class net/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer$LayerTextureKey
-accessible class net/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer$TrimSpriteKey
-accessible method net/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer$TrimSpriteKey <init> (Lnet/minecraft/world/item/equipment/trim/ArmorTrim;Lnet/minecraft/client/resources/model/EquipmentClientInfo$LayerType;Lnet/minecraft/resources/ResourceKey;)V
-accessible method net/minecraft/client/renderer/entity/layers/EquipmentLayerRenderer$LayerTextureKey <init> (Lnet/minecraft/client/resources/model/EquipmentClientInfo$LayerType;Lnet/minecraft/client/resources/model/EquipmentClientInfo$Layer;)V
+<#-- In 1.21.1, we use HumanoidArmorLayer or ArmorFeatureRenderer mappings instead -->
+accessible field net/minecraft/client/renderer/entity/layers/HumanoidArmorLayer ARMOR_LOCATION_CACHE Ljava/util/Map;
 </#if>
 
 <#if w.hasElementsOfType("gui")>
