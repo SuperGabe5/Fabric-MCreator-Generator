@@ -38,7 +38,7 @@
 	"${modid}.mixins.json"
   ],
   "depends": {
-	"fabricloader": ">=0.17.2",
+	"fabricloader": ">=0.18.4",
 	"minecraft": "~${generator.getGeneratorMinecraftVersion()}",
 	"java": ">=21",
 	"fabric-api": "*"
